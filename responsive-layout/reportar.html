@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets - Help Desk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="logo">Help Desk UTM</span>
+    <ul class="nav-menu">
+      <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+      <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+      <li><a href="reportar.html" class="nav-link">Reportar Incidencia</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-container">
+    <h1>Gestión de Tickets</h1>
+
+    <div class="card">
+      <h2>Historial de Tickets</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Asunto</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Prioridad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#101</td>
+              <td>Error de acceso a PostgreSQL</td>
+              <td>En Proceso</td>
+              <td>Alta</td>
+            </tr>
+            <tr>
+              <td>#102</td>
+              <td>Fallo de puerto en Router Cisco</td>
+              <td>Abierto</td>
+              <td>Media</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
