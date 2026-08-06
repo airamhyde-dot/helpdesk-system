@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Reportar Incidente</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/logo.png" alt="Logo Help Desk" width="150">
+        <h1>Sistema de Gestión de Incidentes - Help Desk</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Listado de Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Ingreso de Nuevo Incidente</h2>
+            <p>Complete el siguiente formulario con la información detallada del problema detectado.</p>
+
+            <form action="#" method="post">
+                
+                <div>
+                    <label for="titulo">Título del Incidente:</label><br>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Ej. Fallo de conexión en laboratorio 2">
+                </div>
+                <br>
+
+                <div>
+                    <label for="categoria">Categoría del problema:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <option value="red">Red</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+                    </select>
+                </div>
+                <br>
+
+                <fieldset>
+                    <legend>Nivel de Prioridad:</legend>
+                    <input type="radio" id="prioridad-alta" name="prioridad" value="alta" required>
+                    <label for="prioridad-alta">Alta</label><br>
+
+                    <input type="radio" id="prioridad-media" name="prioridad" value="media">
+                    <label for="prioridad-media">Media</label><br>
+
+                    <input type="radio" id="prioridad-baja" name="prioridad" value="baja">
+                    <label for="prioridad-baja">Baja</label>
+                </fieldset>
+                <br>
+
+                <div>
+                    <label for="descripcion">Descripción detallada:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="6" cols="50" required placeholder="Describa brevemente los síntomas o mensajes de error..."></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <button type="submit">Enviar Reporte</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Help Desk - Universidad Técnica de Manabí</p>
+    </footer>
+
+</body>
+</html>
