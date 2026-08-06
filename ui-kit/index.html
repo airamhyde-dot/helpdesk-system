@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Kit - Sistema de Gestión de Incidentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header class="header">
+      <h1>Design System - Incident Management System</h1>
+      <p>Biblioteca de componentes UI reutilizables (Actividad #5)</p>
+    </header>
+
+    <!-- Sección 1: Botones -->
+    <section>
+      <h2 class="section-title">1. Botones</h2>
+      <div class="component-group">
+        <button class="btn btn-primary" type="button">Botón Primario</button>
+        <button class="btn btn-secondary" type="button">Botón Secundario</button>
+        <button class="btn btn-danger" type="button">Eliminar / Peligro</button>
+      </div>
+    </section>
+
+    <!-- Sección 2: Formularios -->
+    <section>
+      <h2 class="section-title">2. Campos de Formulario</h2>
+      <div class="component-group">
+        <div class="form-group">
+          <label for="ticket-title" class="form-label">Título del Ticket</label>
+          <input type="text" id="ticket-title" class="form-input" placeholder="Ej. Fallo en red local">
+        </div>
+
+        <div class="form-group">
+          <label for="ticket-category" class="form-label">Categoría</label>
+          <select id="ticket-category" class="form-select">
+            <option value="">Seleccione una opción</option>
+            <option value="hardware">Hardware</option>
+            <option value="software">Software</option>
+            <option value="redes">Redes e Infraestructura</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Alertas / Badges -->
+    <section>
+      <h2 class="section-title">3. Etiquetas de Prioridad (Badges)</h2>
+      <div class="component-group">
+        <span class="badge badge-alta">Prioridad Alta</span>
+        <span class="badge badge-media">Prioridad Media</span>
+        <span class="badge badge-baja">Prioridad Baja</span>
+      </div>
+    </section>
+
+    <!-- Sección 4: Tarjetas (Cards) -->
+    <section>
+      <h2 class="section-title">4. Tarjetas de Incidentes (Ticket Cards)</h2>
+      <div class="card-grid">
+        
+        <article class="ticket-card">
+          <div>
+            <div class="ticket-card__header">
+              <span class="ticket-card__id">#INC-1024</span>
+              <span class="badge badge-alta">Alta</span>
+            </div>
+            <h3 class="ticket-card__title">Servidor de Base de Datos Caído</h3>
+            <p class="ticket-card__desc">
+              El servidor principal de PostgreSQL no responde a las solicitudes del sistema de ventas.
+            </p>
+          </div>
+          <div class="ticket-card__footer">
+            <button class="btn btn-primary" type="button">Atender</button>
+            <button class="btn btn-secondary" type="button">Detalles</button>
+          </div>
+        </article>
+
+        <article class="ticket-card">
+          <div>
+            <div class="ticket-card__header">
+              <span class="ticket-card__id">#INC-1025</span>
+              <span class="badge badge-media">Media</span>
+            </div>
+            <h3 class="ticket-card__title">Lentitud en la red WiFi</h3>
+            <p class="ticket-card__desc">
+              Usuarios del bloque B reportan baja velocidad en la conexión durante las mañanas.
+            </p>
+          </div>
+          <div class="ticket-card__footer">
+            <button class="btn btn-primary" type="button">Atender</button>
+            <button class="btn btn-secondary" type="button">Detalles</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
